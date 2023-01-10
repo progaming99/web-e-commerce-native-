@@ -1,0 +1,109 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <title>Sistem Pembayaran Online Anda</title>
+    <script src="https://my.ipaymu.com/js/signup/jquery-1.7.1.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link media="all" type="text/css" rel="stylesheet" href="https://my.ipaymu.com/assets/instant/css/bootstrap.css">
+
+    <link media="all" type="text/css" rel="stylesheet" href="https://my.ipaymu.com/assets/instant/css/font.css">
+
+    <link media="all" type="text/css" rel="stylesheet" href="https://my.ipaymu.com/assets/instant/css/ionicons.min.css">
+
+    <!-- Custom styles for this template -->
+    <link media="all" type="text/css" rel="stylesheet" href="https://my.ipaymu.com/assets/instant/css/style.css">
+
+    <link rel="stylesheet" href="https://my.ipaymu.com/css/signup/validationEngine.jquery.css">
+
+
+    <style type="text/css">
+        .container {
+            max-width: 600px;
+        }
+        @media (max-width: 375px){
+            .col-xs-6{
+                width: 100%;
+            }
+        }
+    </style>
+
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <!--<body oncontextmenu="return false;">-->
+  <body>
+
+    <div class="container mt25">
+        <img src="../assets/img/logo_baru.png" width="200" style="margin:auto;display:block;">
+    </div>
+    
+    <div class="container">
+                <div class="form-registrasi">
+            <form method="POST" accept-charset="UTF-8" id="SignupForm" class="mt25" action="prosesdaftar.php">
+                <div class="panel-body p20">
+				<div class="form-group ">
+                        <label for="name">Nama</label>
+                        <input placeholder="" class="form-control validate[required]" value="" name="username" type="text" id="name">
+                    </div>
+                                        <div class="row">
+                        <div class="form-group col-xs-6">
+                            <label for="email">Email</label>
+                            <input placeholder="" class="form-control validate[required,custom[email],ajax[ajaxEmailCallPhp]]" value="" name="email" type="email" id="email">
+                        </div>
+                        <div class="form-group col-xs-6">
+                            <label for="password">Password</label>
+                            <input placeholder="" class="form-control validate[required]" value="" name="password" type="password" id="password">
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="form-group col-xs-6">
+                            <label for="phone">No. HP (GSM / CDMA)</label>
+                            <input placeholder="contoh: 08123456789" class="form-control validate[custom[onlyNumberSp],ajax[ajaxPhoneCallPhp],required]" value="" name="telp" type="text" id="phone">
+                        </div>
+                    </div>
+                   
+                    
+                                        <div class="alert alert-info" role="alert">
+                        <input style="width:auto; margin-right:10px;" type="checkbox" id="terms" name="terms" class="validate[required]"> Ya, saya telah membaca dan setuju dengan <a  style="text-decoration: underline;" target="_blank">Persetujuan Pengguna</a> dan <a  target="_blank" style="text-decoration: underline;">Syarat &amp; Ketentuan</a> yang telah ditentukan untuk menggunakan layanan Ecoins.
+                    </div>
+                    
+                    <button type="submit" name="daftar value="1" class="btn btn-success btn-md btn-block">DAFTAR SEKARANG</button>
+                </div>
+            </form>
+        </div>
+            </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    
+    <script src="https://my.ipaymu.com/assets/instant/js/bootstrap.min.js"></script>
+    <script src="https://my.ipaymu.com/js/signup/jquery.validationEngine.js"></script>
+    <script src="https://my.ipaymu.com/js/signup/jquery.validationEngine-en.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.tool').tooltip();
+        });
+
+        $(function () {
+            var $signupForm = $('#SignupForm');
+            $signupForm.validationEngine();
+        });
+    </script>
+  
+</body></html>
